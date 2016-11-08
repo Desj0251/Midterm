@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Chango');
+
+/****************/
+/* Mobile First */
+/****************/
+
+header{
+    font-weight: bolder;
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 0px 4px 6px #000;
+    -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,1);
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,1);
+    font-family: Chango, "Helvetica", "Arial", sans-serif;
+    font-size: 1.5rem;
+    background-image: url(../img/Ottawa-in-the-fall.jpg);
+    background-position: top;    
+    background-size: cover;
+    border: 0.3rem solid #555;
+    color: darkorange;
+    margin-bottom: 20px;
+}
+
+.wrapper{
+    margin: 20px auto;
+    width: 85%;
+    font-family: Chango, "Helvetica", "Arial", sans-serif;
+}
+.Hourlyforecast div{
+    width: 100%;
+    border: 1px solid black;
+    display: none;
+    padding: 10px 0;
+    box-sizing: border-box;
+    height: auto;
+    margin-bottom: 5px;
+    border: 0.3rem solid #555;
+    text-shadow: 0px 4px 6px #000;
+}
+.Hourlyforecast div:nth-child(3n+2){
+    display: block;
+}
+.Hourlyforecast div p{
+    display:inline-block;
+    text-align: center;
+    width: 25%;
+    box-sizing: border-box;
+    margin: 0;
+}
+p.time{
+    font-size: 1.25rem;
+}
+p.temp{
+    font-size: 2rem;
+}
+p.summary{
+    font-size: 0.75rem;
+}
+i{
+    display: inline-block;
+    text-align: center;
+    font-size: 50px;
+    width: 25%;
+}
+
+@media screen and (min-width:650px){
+    .Hourlyforecast{
+        text-align: center;
+    }
+    .Hourlyforecast div{
+        width: 23%;
+        margin: 3px;
+    }
+    .Hourlyforecast div:nth-child(3n+2){
+        display: inline-block;
+    }
+    .Hourlyforecast div p{
+        display: block;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    p.summary{
+        font-size: 0.65rem;
+    }
+    i{
+        display: block;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1200px){
+    .Hourlyforecast{
+        text-align: center;
+    }
+    .Hourlyforecast div{
+        width: 15%;
+        margin: 5px;
+    }
+    .Hourlyforecast div:nth-child(4n){
+        display: inline-block;
+    }
+    .Hourlyforecast div p{
+        display: block;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    p.summary{
+        font-size: 0.65rem;
+    }
+    i{
+        display: block;
+        width: 100%;
+    }
+}
+
+/****************************************************************************************/
+/* Deals with the background colours of Div's based on the icon diplayed and class name */
+/****************************************************************************************/
+
+.clear-day {
+    background-color: deepskyblue;
+    color: white;
+    background-image: url(../img/preview-10464pjwyjaR2AX_0002.jpg);
+    background-position: 50%;    
+    background-size: cover;
+}
+.clear-night {
+    background-color: darkblue;
+    color: gold;
+    background-image: url(../img/P0826-Uncountable+Stars-Medium.jpg);
+    background-position: top;    
+    background-size: cover;
+}
+.rain {
+    background-color: lightblue;
+    color: #444;
+    background-image: url(../img/rain-04.jpg);
+    background-position: 50%;    
+    background-size: cover;
+}
+.snow {
+    background-color: aliceblue;
+    color: darkslategray;
+    background-image: url(../img/shutterstock_315123593-984x500.jpg);
+    background-position: 50%;    
+    background-size: cover;
+}
+.sleet {
+    background-color: gray;
+    color: darkslategray;
+    background-image: url(../img/6-800.jpg);
+    background-position: 50%;    
+    background-size: cover;
+}
+.wind {
+    background-color: skyblue;
+    color: darkred;
+    background-image: url(../img/leaves_blowing_in_the_wind_by_supercutekitty101-d6hiuqd.jpg);
+    background-position: 50%;    
+    background-size: cover;
+}
+.fog {
+    background-color: gray;
+    color: #333;
+    background-image: url(../img/iot-a-fog-cloud-computing-model.jpg);
+    background-position: 50%;    
+    background-size: cover;
+}
+.cloudy {
+    background-color: darkslategray;
+    color: white;
+    background-image: url(../img/4326552040_546932bd93_b.jpg);
+    background-position: top;    
+    background-size: cover;
+}
+.partly-cloudy-day {
+    background-color: gray;
+    color: lightskyblue;
+    background-image: url(../img/1.jpg);
+    background-position: 50%;    
+    background-size: cover;
+}
+.partly-cloudy-night {
+    background-color: darkblue;
+    color: gold;
+    background-image: url(../img/Fotolia_40741829_M_900x600px.jpg);
+    background-position: top;    
+    background-size: cover;
+}
